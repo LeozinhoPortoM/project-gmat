@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-login.css" />
   </head>
   <body>
-    <main>
+    <main class="container">
       <div class="logo">
         <h1>Gmat</h1>
       </div>
@@ -18,11 +18,13 @@
           <div class="input-group">
             <input type="text" required name="user" />
             <label for="">Usuário:</label>
+            <span class="error"></span>
           </div>
 
           <div class="input-group">
             <input type="password" required name="password" />
             <label for="password">Senha:</label>
+            <span class="error"></span>
           </div>
 
           <div class="btn">

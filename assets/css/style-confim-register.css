@@ -1,0 +1,33 @@
+@import url("style-base.css");
+
+
+/* Page Confirm Register */
+
+.container-confirm-register {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-check {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #008000;
+  border-radius: 50%;
+}
+
+.icon-check i {
+  color: #008000;
+}
+
+.container-confirm-register p {
+  width: clamp(200px, 100%, 450px);
+  text-align: center;
+  font-size: 1rem;
+  color: #ada9a9;
+}

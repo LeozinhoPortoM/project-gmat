@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/style-home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <img src="./assets/img/user-icon.png" alt="" />
+      </header>
+      <nav>
+        <button>
+          <span>
+            <i class="material-symbols-outlined"> home </i>
+            <span> Home </span>
+          </span>
+        </button>
+        <button>
+          <span>
+            <i class="material-symbols-outlined"> person_add </i>
+            <span> Matricular </span>
+          </span>
+        </button>
+        <button>
+          <span>
+            <i class="material-symbols-outlined"> checklist </i>
+            <span> Acompanhar </span>
+          </span>
+        </button>
+        <button>
+          <span>
+            <i class="material-symbols-outlined"> mail </i>
+            <span> Mensagem </span>
+          </span>
+        </button>
+        <button>
+          <span>
+            <i class="material-symbols-outlined"> manage_accounts </i>
+            <span> Perfil </span>
+          </span>
+        </button>
+      </nav>
+    </aside>
+
+    <button class="btn-mobile">
+      <i class="material-symbols-outlined">menu</i>
+    </button>
+
+    <nav class="menu-mobile">
+      <button>
+        <span>
+          <i class="material-symbols-outlined"> home </i>
+          <span class="mobile-text"> Home </span>
+        </span>
+      </button>
+      <button>
+        <span class="mobile-text">
+          <i class="material-symbols-outlined"> person_add </i>
+          <span class="mobile-text"> Matricular </span>
+        </span>
+      </button>
+      <button>
+        <span class="mobile-text">
+          <i class="material-symbols-outlined"> checklist </i>
+          <span class="mobile-text"> Acompanhar </span>
+        </span>
+      </button>
+      <button>
+        <span class="mobile-text">
+          <i class="material-symbols-outlined"> mail </i>
+          <span class="mobile-text"> Mensagem </span>
+        </span>
+      </button>
+      <button>
+        <span>
+          <i class="material-symbols-outlined"> manage_accounts </i>
+          <span> Perfil </span>
+        </span>
+      </button>
+    </nav>
+
+    <main class="container-home">
+      <h1>Seja bem vindo Léo Porto</h1>
+
+      <div class="cards">
+        <div class="card">
+          <i class="material-symbols-outlined">person_add</i>
+          <span>Matricular</span>
+        </div>
+        <div class="card">
+          <i class="material-symbols-outlined">checklist</i>
+          <span>Acompanhar</span>
+        </div>
+        <div class="card">
+          <i class="material-symbols-outlined">mail</i>
+          <span>Mensagens</span>
+        </div>
+        <div class="card">
+          <i class="material-symbols-outlined">manage_accounts</i>
+          <span>Perfil</span>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const btnMobile = document.querySelector(
+      ".btn-mobile .material-symbols-outlined"
+    );
+    btnMobile.onclick = () => {
+      const menuMobile = document.querySelector(".menu-mobile");
+      if (btnMobile.innerHTML === "menu") {
+        btnMobile.innerHTML = "close";
+        menuMobile.classList.add("active");
+      } else {
+        btnMobile.innerHTML = "menu";
+        menuMobile.classList.remove("active");
+      }
+    };
+  </script>
+</html>

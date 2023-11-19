@@ -5,39 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style-register.css" />
   </head>
   <body>
-    <main>
+    <main class="container">
       <div class="logo">
         <h1>Gmat</h1>
       </div>
       <div class="container-register">
         <h2>Cadastrar</h2>
-        <form>
+        <form id="form-register">
           <div class="input-group">
             <div class="input name">
               <input type="text" required name="fullName" />
               <label for="fullName">Nome completo:</label>
+              <span class="error"></span>
             </div>
-            <div class="input date">
-              <input type="date" required name="dateBirth" />
-              <label for="dateBirth">Data de Nascimento:</label>
+
+            <div class="input">
+              <input type="email" required name="email" />
+              <label for="email">E-mail</label>
+              <span class="error"></span>
             </div>
           </div>
 
           <div class="input-group">
             <div class="input">
-              <input type="text" required name="cpf" />
+              <input
+                type="text"
+                required
+                name="cpf"
+                class="cpf"
+                onkeyup="maskCpf()"
+              />
               <label for="cpf">CPF</label>
+              <span class="error"></span>
             </div>
-            <div class="input">
-              <input type="email" required name="email" />
-              <label for="email">E-mail</label>
+
+            <div class="input date">
+              <input type="date" required name="dateBirth" />
+              <label for="dateBirth">Data de Nascimento:</label>
+              <span class="error"></span>
             </div>
+
             <div class="input">
-              <input type="text" required name="cellPhone" />
+              <input
+                type="text"
+                required
+                name="cellPhone"
+                class="phone"
+                onkeyup="maskPhone()"
+              />
               <label for="cellPhone">Telefone Celular</label>
+              <span class="error"></span>
             </div>
           </div>
 
@@ -45,10 +65,13 @@
             <div class="input">
               <input type="password" required name="password" />
               <label for="password">Senha</label>
+              <span class="error"></span>
             </div>
+
             <div class="input">
               <input type="password" required name="confirmPassword" />
               <label for="confirmPassword">Confirmar senha</label>
+              <span class="error"></span>
             </div>
           </div>
 
@@ -59,9 +82,12 @@
           </div> -->
 
           <div class="btn">
-            <button class="btn-register" onclick="handleRegister()">Cadastrar</button>
+            <button class="btn-register" type="submit">Cadastrar</button>
           </div>
         </form>
+        <section class="section-return-login">
+          <a href="/login.html">Voltar para o login</a>
+        </section>
       </div>
     </main>
     <script src="./assets/js/script.js"></script>
