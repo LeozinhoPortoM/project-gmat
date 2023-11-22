@@ -30,7 +30,7 @@
 .container-login form .input-group input {
   all: unset;
   width: 100%;
-  color: #fefefe;
+  color: var(--text-color);
   padding: 1rem;
   border: 1px solid #9e9e9e;
   border-radius: 10px;

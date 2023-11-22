@@ -13,73 +13,306 @@
     />
   </head>
   <body>
-    <button class="btn-mobile-open">
-      <i class="material-symbols-outlined">menu</i>
-    </button>
+    <div class="header-mobile">
+      <button class="btn-mobile-open">
+        <i class="material-symbols-outlined">menu</i>
+      </button>
+      <div class="logo-home-mobile">
+        <h3>Gmat</h3>
+      </div>
+    </div>
     <aside class="sidebar">
       <header class="sidebar-header">
-        <img src="./assets/img/user-icon.png" alt="" />
+        <div class="logo-home">
+          <h3>Gmat</h3>
+        </div>
         <button class="btn-mobile-close">
           <i class="material-symbols-outlined">close</i>
         </button>
       </header>
       <nav>
         <button>
-          <span>
-            <i class="material-symbols-outlined"> home </i>
-            <span> Home </span>
-          </span>
+          <a href="">
+            <span>
+              <i class="material-symbols-outlined"> home </i>
+              <span> Home </span>
+            </span>
+          </a>
         </button>
+
         <button>
-          <span>
-            <i class="material-symbols-outlined"> person_add </i>
-            <span> Matricular </span>
-          </span>
+          <a href="./registerStudent.html">
+            <span>
+              <i class="material-symbols-outlined"> person_add </i>
+              <span> Matricular </span>
+            </span>
+          </a>
         </button>
+
         <button>
-          <span>
-            <i class="material-symbols-outlined"> checklist </i>
-            <span> Acompanhar </span>
-          </span>
+          <a href="">
+            <span>
+              <i class="material-symbols-outlined"> checklist </i>
+              <span> Acompanhar </span>
+            </span>
+          </a>
         </button>
+
         <button>
-          <span>
-            <i class="material-symbols-outlined"> mail </i>
-            <span> Mensagem </span>
-          </span>
-        </button>
-        <button>
-          <span>
-            <i class="material-symbols-outlined"> manage_accounts </i>
-            <span> Perfil </span>
-          </span>
+          <a href="">
+            <span>
+              <i class="material-symbols-outlined"> mail </i>
+              <span> Mensagem </span>
+            </span>
+          </a>
         </button>
       </nav>
+
+      <a href="" class="perfil">
+        <span>
+          <i class="material-symbols-outlined">person</i>
+          <span> Perfil </span>
+        </span>
+      </a>
     </aside>
 
     <main class="container-home">
       <h1>Seja bem vindo Léo Porto</h1>
 
-      <div class="cards">
+      <!-- <div class="cards">
         <div class="card">
-          <i class="material-symbols-outlined">person_add</i>
-          <span>Matricular</span>
+          <a href="./registerStudent.html">
+            <i class="material-symbols-outlined">person_add</i>
+            <span>Matricular</span>
+          </a>
         </div>
         <div class="card">
-          <i class="material-symbols-outlined">checklist</i>
-          <span>Acompanhar</span>
+          <a href="">
+            <i class="material-symbols-outlined">checklist</i>
+            <span>Acompanhar</span>
+          </a>
         </div>
         <div class="card">
-          <i class="material-symbols-outlined">mail</i>
-          <span>Mensagens</span>
+          <a href="">
+            <i class="material-symbols-outlined">mail</i>
+            <span>Mensagens</span>
+          </a>
         </div>
         <div class="card">
-          <i class="material-symbols-outlined">manage_accounts</i>
-          <span>Perfil</span>
+          <a href="">
+            <i class="material-symbols-outlined">manage_accounts</i>
+            <span>Perfil</span>
+          </a>
         </div>
-      </div>
+      </div> -->
 
-      <div class="modal-register"></div>
+      <div class="container-register-students">
+        <form action="">
+          <section>
+            <fieldset>
+              <legend>Dados do Aluno</legend>
+              <div class="input-group">
+                <label for="">Turma</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Nome</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Data de Nascimento</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Sexo</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Cor</label>
+                <input type="text" />
+              </div>
+
+              <div class="input-group">
+                <label for="">Nacionalidade</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Naturalidade</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">UF</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Nome do Cartório</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Cartório de ofício</label>
+                <input type="text" />
+              </div>
+
+              <div class="input-group">
+                <label for="">Número da Matricula</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Número do Livro</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Número da Folha</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Número do Termo</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Data de Emissão</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">UF</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">CPF</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">RG</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Número do bolsa família</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Grupo Sanguíneo/Fator RH</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Cartão SUS</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Plano de saúde</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">N°</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Telefone</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Alergia algum medicamento ou produto</label>
+                <input type="text" />
+              </div>
+              <div class="input-group">
+                <label for="">Autorização de saída da escola</label>
+                <input type="text" />
+              </div>
+            </fieldset>
+          </section>
+          <section>
+            <div class="container-upload">
+              
+              <div class="box-upload">
+                <input type="file" id="upload-declaracao" accept=".pdf" hidden />
+                <label for="upload-declaracao" class="upload-label">
+                  <span class="material-symbols-outlined"> cloud_upload </span>
+                  <p>Declaração/Transferência</p>
+                </label>
+                <span id="file-name-declaracao"></span>
+              </div>
+
+              <div class="box-upload">
+                <input type="file" id="upload-certidao" accept=".pdf" hidden />
+                <label for="upload-certidao" class="upload-label">
+                  <span class="material-symbols-outlined"> cloud_upload </span>
+                  <p>Certidão de nascimento</p>
+                </label>
+                <span id="file-name-certidao"></span>
+              </div>
+
+              <div class="box-upload">
+                <input type="file" id="upload-cpf-res" accept=".pdf" hidden />
+                <label for="upload-cpf-res" class="upload-label">
+                  <span class="material-symbols-outlined"> cloud_upload </span>
+                  <p>CPF e RG Responsável</p>
+                </label>
+                <span id="file-name-cpf-res"></span>
+              </div>
+
+              <div class="box-upload">
+                <input type="file" id="upload-cpf-est" accept=".pdf" hidden />
+                <label for="upload-cpf-est" class="upload-label">
+                  <span
+                    ><span class="material-symbols-outlined">
+                      cloud_upload
+                    </span></span
+                  >
+                  <p>CPF e RG Estudante</p>
+                </label>
+                <span id="file-name-cpf-est"></span>
+              </div>
+              <div class="box-upload">
+                <input type="file" id="upload-residencia" accept=".pdf" hidden />
+                <label for="upload-residencia" class="upload-label">
+                  <span
+                    ><span class="material-symbols-outlined">
+                      cloud_upload
+                    </span></span
+                  >
+                  <p>Comprovante de Residencia</p>
+                </label>
+                <span id="file-name-residencia"></span>
+              </div>
+              <div class="box-upload">
+                <input type="file" id="upload-vacina" accept=".pdf" hidden />
+                <label for="upload-vacina" class="upload-label">
+                  <span
+                    ><span class="material-symbols-outlined">
+                      cloud_upload
+                    </span></span
+                  >
+                  <p>Cartão de Vacina</p>
+                </label>
+                <span id="file-name-vacina"></span>
+              </div>
+              <div class="box-upload">
+                <input type="file" id="upload-sus" accept=".pdf" hidden />
+                <label for="upload-sus" class="upload-label">
+                  <span
+                    ><span class="material-symbols-outlined">
+                      cloud_upload
+                    </span></span
+                  >
+                  <p>Cartão do SUS</p>
+                </label>
+                <span id="file-name-sus"></span>
+              </div>
+              <div class="box-upload">
+                <input type="file" id="upload-nis" accept=".pdf" hidden />
+                <label for="upload-nis" class="upload-label">
+                  <span
+                    ><span class="material-symbols-outlined">
+                      cloud_upload
+                    </span></span
+                  >
+                  <p>Número do NIS</p>
+                </label>
+                <span id="file-name-nis"></span>
+              </div>
+            </div>
+          </section>
+        </form>
+      </div>
     </main>
   </body>
   <script>
@@ -96,6 +329,55 @@
     btnMobileClose.onclick = () => {
       const menuMobile = document.querySelector(".sidebar");
       menuMobile.classList.remove("active");
+    };
+
+    const inputDeclaracao = document.querySelector("#upload-declaracao");
+    const fileDeclaracao = document.querySelector("#file-name-declaracao");
+
+    const inputCertidao = document.querySelector("#upload-certidao");
+    const fileCertidao = document.querySelector("#file-name-certidao");
+
+    const inputCpfRes = document.querySelector("#upload-cpf-res");
+    const fileCpfRes = document.querySelector("#file-name-cpf-res");
+
+    const inputCpfEst = document.querySelector("#upload-cpf-est");
+    const fileCpfEst = document.querySelector("#file-name-cpf-est");
+
+    const inputResidencia = document.querySelector("#upload-residencia");
+    const fileResidencia = document.querySelector("#file-name-residencia");
+
+    const inputVacina = document.querySelector("#upload-vacina");
+    const fileVacina = document.querySelector("#file-name-vacina");
+
+    const inputSus = document.querySelector("#upload-sus");
+    const fileSus = document.querySelector("#file-name-sus");
+
+    const inputNis = document.querySelector("#upload-nis");
+    const fileNis = document.querySelector("#file-name-nis");
+
+    inputDeclaracao.onchange = (e) => {
+      fileDeclaracao.innerHTML = e.target.files[0].name;
+    };
+    inputCertidao.onchange = (e) => {
+      fileCertidao.innerHTML = e.target.files[0].name;
+    };
+    inputCpfRes.onchange = (e) => {
+      fileCpfRes.innerHTML = e.target.files[0].name;
+    };
+    inputCpfEst.onchange = (e) => {
+      fileCpfEst.innerHTML = e.target.files[0].name;
+    };
+    inputResidencia.onchange = (e) => {
+      fileResidencia.innerHTML = e.target.files[0].name;
+    };
+    inputVacina.onchange = (e) => {
+      fileVacina.innerHTML = e.target.files[0].name;
+    };
+    inputSus.onchange = (e) => {
+      fileSus.innerHTML = e.target.files[0].name;
+    };
+    inputNis.onchange = (e) => {
+      fileNis.innerHTML = e.target.files[0].name;
     };
   </script>
 </html>
