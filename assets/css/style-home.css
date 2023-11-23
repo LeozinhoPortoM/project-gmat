@@ -364,10 +364,6 @@
   }
 }
 
-
-
-
-
 /* Register Resposibili */
 
 .modal {
@@ -393,6 +389,7 @@
   border-radius: 10px;
   padding: 15px;
   background: #fff;
+  animation: showRegister 2s forwards;
 }
 
 .container-register-responsible form fieldset {
@@ -442,7 +439,11 @@
   box-sizing: border-box;
 }
 
-.container-register-responsible form .input-group .input input:-webkit-autofill {
+.container-register-responsible
+  form
+  .input-group
+  .input
+  input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px white inset;
 }
 
@@ -493,4 +494,13 @@
 
 .container-register-responsible form .btn-register:hover {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+}
+
+@keyframes showRegister {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
