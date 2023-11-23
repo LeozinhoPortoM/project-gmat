@@ -13,6 +13,122 @@
     />
   </head>
   <body>
+    <div class="modal">
+      <div class="container-register-responsible">
+        <h2>Cadastro do responsável</h2>
+        <form id="form-register">
+          <fieldset>
+            <legend>Dados da mãe:</legend>
+            <div class="input-group">
+              <div class="input name">
+                <input type="text" required name="fullNameMae" />
+                <label for="fullNameMae">Mãe:</label>
+                <span class="error"></span>
+              </div>
+
+              <div class="input">
+                <input type="text" required name="cpfMae" />
+                <label for="cpfMae">CPF:</label>
+                <span class="error"></span>
+              </div>
+
+              <div class="input">
+                <input type="text" required name="professionMae" />
+                <label for="professionMae">Profissão:</label>
+                <span class="error"></span>
+              </div>
+
+              <div class="input">
+                <input type="text" required name="maritalStatusMae" />
+                <label for="maritalStatusMae">Estado Civil:</label>
+                <span class="error"></span>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Dados da pai:</legend>
+            <div class="input-group">
+              <div class="input name">
+                <input type="text" required name="fullNamePai" />
+                <label for="fullNamePai">Pai:</label>
+                <span class="error"></span>
+              </div>
+
+              <div class="input">
+                <input type="text" required name="cpfPai" />
+                <label for="cpfPai">CPF:</label>
+                <span class="error"></span>
+              </div>
+
+              <div class="input">
+                <input type="text" required name="professionPai" />
+                <label for="professionPai">Profissão:</label>
+                <span class="error"></span>
+              </div>
+
+              <div class="input">
+                <input type="text" required name="maritalStatusPai" />
+                <label for="maritalStatusPai">Estado Civil:</label>
+                <span class="error"></span>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Responsável:</legend>
+            <div class="input-group">
+              <div class="input name">
+                <input type="text" required name="address" />
+                <label for="address">Endereço:</label>
+                <span class="error"></span>
+              </div>
+
+              <div class="input">
+                <input type="text" required name="cep" />
+                <label for="cep">CEP:</label>
+                <span class="error"></span>
+              </div>
+
+              <div class="input">
+                <input type="text" required name="bairro" />
+                <label for="bairro">Bairro:</label>
+                <span class="error"></span>
+              </div>
+
+              <div class="input">
+                <input type="text" required name="zona" />
+                <label for="zona">Zona:</label>
+                <span class="error"></span>
+              </div>
+              <div class="input">
+                <input type="text" required name="cite" />
+                <label for="cite">Cidade:</label>
+                <span class="error"></span>
+              </div>
+              <div class="input">
+                <input type="text" required name="uf" />
+                <label for="uf">UF:</label>
+                <span class="error"></span>
+              </div>
+              <div class="input">
+                <input type="text" required name="phoneMae" />
+                <label for="phoneMae">Telefone Mãe:</label>
+                <span class="error"></span>
+              </div>
+              <div class="input">
+                <input type="text" required name="phonePai" />
+                <label for="phonePai">Telefone Pai:</label>
+                <span class="error"></span>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="btn">
+            <button class="btn-register" type="submit">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <div class="header-mobile">
       <button class="btn-mobile-open">
         <i class="material-symbols-outlined">menu</i>
@@ -106,7 +222,7 @@
         </div>
       </div> -->
 
-      <div class="container-register-students">
+      <!-- <div class="container-register-students">
         <form action="">
           <section>
             <fieldset>
@@ -224,7 +340,7 @@
               
               <div class="box-upload">
                 <input type="file" id="upload-declaracao" accept=".pdf" hidden />
-                <label for="upload-declaracao" class="upload-label">
+                <label for="upload-declaracao" class="upload-label declaracao">
                   <span class="material-symbols-outlined"> cloud_upload </span>
                   <p>Declaração/Transferência</p>
                 </label>
@@ -312,7 +428,7 @@
             </div>
           </section>
         </form>
-      </div>
+      </div> -->
     </main>
   </body>
   <script>
@@ -356,6 +472,15 @@
     const fileNis = document.querySelector("#file-name-nis");
 
     inputDeclaracao.onchange = (e) => {
+      let reader = new FileReader();
+
+      reader.onload = () => {
+        const labelDeclaracao = document.querySelector(".declaracao");
+        const img = document.createElement("img");
+        img.src = reader.result;
+        labelDeclaracao.appendChild(img);
+      };
+      reader.readAsDataURL(e.target.files[0]);
       fileDeclaracao.innerHTML = e.target.files[0].name;
     };
     inputCertidao.onchange = (e) => {
